@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cancelBill id="16614344">
+    <billNo>7016614344</billNo>
+    <cancelOperator>huyan</cancelOperator>
+    <cancelReason>B8L</cancelReason>
+    <cancelTime>1587602982000</cancelTime>
+    <doType>1</doType>
+    <id>16614344</id>
+    <warehouseId>13</warehouseId>
+</cancelBill>
+
+

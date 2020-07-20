@@ -1,8 +1,8 @@
 package com.yan.dubbo;
 
-import com.yyw.wms.dto.DeliveryOrderDto;
-import com.yyw.wms.dto.WmsResponse;
-import com.yyw.wms.dubbo.service.DoDubboService;
+import com.yyw.wms.api.WmsResponse;
+import com.yyw.wms.api.dto.delivery.DeliveryOrderDto;
+import com.yyw.wms.api.dubbo.delivery.DoDubboService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.xml.bind.JAXBContext;
