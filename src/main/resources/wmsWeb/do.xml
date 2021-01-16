@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<deliveryOrder id="73751121647">
+<deliveryOrder id="73752000056">
     <requestUuid>b66b436f-4e6c-47b4-9a1c-e7e177bd4c2e</requestUuid>
-    <address>--666</address>
+    <address>5栋501</address>
     <businessType>0</businessType>
     <isB2BOrder>1</isB2BOrder>
     <buyerType>11</buyerType>
-    <doNo>73751121647</doNo>
-    <carrierId>3008610</carrierId>
+    <doNo>73752000056</doNo>
+    <carrierId>7008200</carrierId>
     <cityId>380</cityId>
-    <cityName>固原市</cityName>
+    <cityName>武汉市</cityName>
     <clientCompany>duansea6</clientCompany>
-    <companyAddress>宁夏固原市彭阳县白阳镇--666</companyAddress>
+    <companyAddress>洪山区光谷软件园E城E5栋501</companyAddress>
     <companyName>药网</companyName>
     <companyUrl>http://www.111.com.cn/</companyUrl>
     <consigneeName>小段1号</consigneeName>
     <countryId>1</countryId>
     <countyId>3566</countyId>
     <countyName>彭阳县</countyName>
-    <createTime>2019-11-05T00:00:00+08:00</createTime>
+    <createTime>2020-07-28T00:00:00+08:00</createTime>
     <deliveryFee>0</deliveryFee>
     <deliveryMethod>10001</deliveryMethod>
     <detailList>
@@ -67,7 +67,7 @@
     <mobileTel>13166210872</mobileTel>
     <orderAmount>482.15</orderAmount>
     <orderErrorPrice>0.0002</orderErrorPrice>
-    <orderSource>A3y</orderSource>
+    <orderSource>A3F</orderSource>
     <orderTypeInErp>1</orderTypeInErp>
     <parentSoCode>XXD20190704103213600055</parentSoCode>
     <paymentMethod>银行转账</paymentMethod>

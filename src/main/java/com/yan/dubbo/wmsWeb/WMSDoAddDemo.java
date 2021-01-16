@@ -1,14 +1,15 @@
-package com.yan.dubbo;
+package com.yan.dubbo.wmsWeb;
 
-import com.yyw.wms.api.WmsResponse;
-import com.yyw.wms.api.dto.delivery.DeliveryOrderDto;
-import com.yyw.wms.api.dubbo.delivery.DoDubboService;
+import com.yyw.wms.dto.WmsResponse;
+import com.yyw.wms.dto.oms.DoFrozenBatchNoInfoDto;
+import com.yyw.wms.dubbo.service.DoDubboService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
+import java.util.List;
 
 /**
  * Created by huyan on 2019/11/19.
@@ -17,16 +18,16 @@ import java.io.File;
  */
 public class WMSDoAddDemo {
 
-    public static final String FILE_NAME = "do.xml";
+    public static final String FILE_NAME = "wmsWeb/do.xml";
 
     public static void main(String[] args) throws JAXBException {
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("spring-dubbo.xml");
         ctx.start();
         try {
             DoDubboService doDubboService = (DoDubboService) ctx.getBean("doDubboService");
-            DeliveryOrderDto doDto = xmlToBean(DeliveryOrderDto.class);
-            WmsResponse wmsResponse = doDubboService.add(doDto);
-            System.out.println("DO ADD code: " + wmsResponse.getCode() + " msg: " + wmsResponse.getMessage());
+            WmsResponse<List<DoFrozenBatchNoInfoDto>> response = doDubboService.getMoreBatchInfoByDoNo("52013140810", 13L);
+            List<DoFrozenBatchNoInfoDto> infoList = response.getData();
+            System.out.println(infoList);
         } finally {
             ctx.close();
         }
